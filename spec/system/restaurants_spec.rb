@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Restaurants", type: :system do
   before do
-    driven_by(:selenium_chrome_headless)
+    driven_by(:selenium_chrome_headless) # run browser tests without actually opening browser tab
   end
 
   context "when visiting the index page" do

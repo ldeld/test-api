@@ -1,6 +1,7 @@
 class RestaurantsController < ApplicationController
   def index
     @restaurants = Restaurant.all
+    # raise
     respond_to do |format|
       format.html
       format.json
